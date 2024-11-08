@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Header from "$lib/Header.svelte"
+	import Header from '$lib/Header.svelte';
 </script>
 
 <div class="main bg-gray-100">
@@ -62,7 +62,7 @@
 			</defs>
 		</svg>
 	</div>
-	
+
 	<Header />
 
 	<div class="content">
@@ -76,6 +76,7 @@
 				Plattformen der Nav har tatt steget fra <br /><em>fire</em> leveranser <em>per år</em>
 				<br />til <em>tusenvis</em> av deploys <em>per uke</em>
 			</h2>
+			<a class="cta" href="#">Lær mer om plattformen</a>
 		</div>
 		<div class="banner_img">
 			<figure><img class="img_responsive" src="banner_img.png" /></figure>
@@ -84,7 +85,23 @@
 </div>
 
 <style>
-    @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+	.cta {
+		display: inline-block;
+		margin-top: 20px;
+		padding: 15px 20px;
+		color: white;
+		font-size: 17px;
+		line-height: 20px;
+		font-weight: 400;
+		border-radius: 30px;
+		text-transform: uppercase;
+		text-decoration: none !important;
+		background-color: #f0390f;
+	}
+	.cta:hover {
+		background-color: rgb(250, 132, 105);
+	}
+	@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 	.main {
 		font-size: 14px;
 		font-family: 'Poppins', sans-serif;
@@ -101,13 +118,13 @@
 		display: flex;
 		flex-direction: row;
 	}
-    .banner_img {
-        width: 900px;
-    }
-    .img_responsive {
-        width: 82%;
-        height: auto;
-    }
+	.banner_img {
+		width: 900px;
+	}
+	.img_responsive {
+		width: 82%;
+		height: auto;
+	}
 	.content .left {
 		left: 0;
 		right: 0;
@@ -116,7 +133,7 @@
 	}
 	.left {
 		margin-left: 10%;
-        min-width: 500px;
+		min-width: 500px;
 	}
 	.left h3 {
 		padding-top: 60px;
@@ -209,6 +226,4 @@
 		--tw-backdrop-saturate: ;
 		--tw-backdrop-sepia: ;
 	}
-
-
 </style>
