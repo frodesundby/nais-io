@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Header from '$lib/Header.svelte';
+	import Footer from '$lib/Footer.svelte';
 </script>
 
 <div class="main bg-gray-100">
@@ -73,15 +74,18 @@
 				<br />for det offentlige
 			</h3>
 			<h2>
-				Nais er en applikasjonsplattform og verktøykasse for å hjelpe utviklere med å <em>levere</em>. <br />
+				Nais er en applikasjonsplattform og verktøykasse for å hjelpe utviklere med å <em>levere</em
+				>. <br />
 				Laget av Nav, tilgjengelig for det offentlige.
 			</h2>
-			<a class="cta" href="#">Lær mer om plattformen</a>
+			<a class="cta" href="https://docs.nais.io">Lær mer om Nais</a>
 		</div>
 		<div class="banner_img">
-			<figure><img class="img_responsive" src="banner_img.png" /></figure>
+			<figure><img class="img_responsive" src="multicloud.png" /></figure>
 		</div>
 	</div>
+
+	<Footer />
 </div>
 
 <style>
@@ -109,6 +113,9 @@
 		font-weight: normal;
 		height: 100vh;
 		text-align: center;
+		display: flex;
+		flex-direction: column;
+
 		@font-face {
 			font-family: 'Poppins';
 			src: url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
@@ -117,11 +124,13 @@
 	.main .content {
 		display: flex;
 		flex-direction: row;
+		flex-grow: 1;
 	}
 	.banner_img {
 		width: 900px;
 	}
 	.img_responsive {
+		margin-top: 20%;
 		width: 82%;
 		height: auto;
 	}
