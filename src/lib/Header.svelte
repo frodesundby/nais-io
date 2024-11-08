@@ -16,15 +16,10 @@
 				<a class="nav-link" href="https://docs.nais.io">Dokumentasjon</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#" class:isActive={isActive('/logg')}>Logg</a>
+				<a class="nav-link" href="/logg" class:isActive={isActive('/logg')}>Logg</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="/status" class:isActive={isActive('/status')}>Status</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="/announcements" class:isActive={isActive('/announcements')}
-					>Kunngjøringer</a
-				>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="mailto:nais@nav.no">Kontakt oss</a>
