@@ -28,13 +28,13 @@
 	</nav>
 	<!-- <div class="logo"/> -->
 	<a class="github-link nav-link" href="https://github.com/nais"
-		><img class="github" src="github-mark.svg" alt="nais github" />95% åpen kildekode
+		><img class="github" src="github-mark.svg" alt="nais github" />
 	</a>
 </div>
 
 <style>
 	.github {
-		height: 24px;
+		height: 30px;
 	}
 	.nav-link.github-link {
 		text-transform: none;

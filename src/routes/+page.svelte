@@ -71,12 +71,12 @@
 			<h3>
 				En offentlig,
 				<br />offentlig sky,
-				<br />for det offentlige
+				<br />for utviklere i det offentlige
 			</h3>
-			<h2>
-				Nais er en applikasjonsplattform og verktøykasse for å hjelpe utviklere med å <em>levere</em
-				>. <br />
-				Laget av Nav, tilgjengelig for det offentlige.
+			<h2 style="line-height: 2rem; max-width: 580px;">
+				Nais er en applikasjonsplattform og verktøykasse for å hjelpe utviklere med å
+				<em>levere</em>.
+				<div style="padding-top: 16px">Laget av Nav, tilgjengelig for det offentlige.</div>
 			</h2>
 			<a class="cta" href="https://docs.nais.io">Lær mer om Nais</a>
 		</div>
@@ -91,7 +91,7 @@
 <style>
 	.cta {
 		display: inline-block;
-		margin-top: 20px;
+		margin-top: 30px;
 		padding: 15px 20px;
 		color: white;
 		font-size: 17px;
