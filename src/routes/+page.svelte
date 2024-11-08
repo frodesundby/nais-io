@@ -73,8 +73,8 @@
 				<br />for det offentlige
 			</h3>
 			<h2>
-				Plattformen der Nav har tatt steget fra <br /><em>fire</em> leveranser <em>per år</em>
-				<br />til <em>tusenvis</em> av deploys <em>per uke</em>
+				Nais er en applikasjonsplattform og verktøykasse for å hjelpe utviklere med å <em>levere</em>. <br />
+				Laget av Nav, tilgjengelig for det offentlige.
 			</h2>
 			<a class="cta" href="#">Lær mer om plattformen</a>
 		</div>
