@@ -1,6 +1,7 @@
 <script lang="ts">
-
+	import Header from "$lib/Header.svelte"
 </script>
+
 <div class="main bg-gray-100">
 	<div class="absolute inset-0 bg-gray-100 bg-gradient-to-b from-gray-100 via-white to-white">
 		<svg
@@ -61,34 +62,9 @@
 			</defs>
 		</svg>
 	</div>
-	<div class="row">
-		<div class="logo">
-            nais.io
-		</div>
-		<nav class="navigation navbar navbar-expand-md navbar-dark">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item">
-					<a class="nav-link" href="https://nais.io/blog/">Artikler</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="https://docs.nais.io">Dokumentasjon</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Logg</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Status</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="/announcements">Kunngjøringer</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="mailto:nais@nav.no">Kontakt oss</a>
-				</li>
-			</ul>
-		</nav>
-		<div class="logo"/>
-	</div>
+	
+	<Header />
+
 	<div class="content">
 		<div class="left">
 			<h3>
@@ -109,6 +85,22 @@
 
 <style>
     @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+	.main {
+		font-size: 14px;
+		font-family: 'Poppins', sans-serif;
+		line-height: 1.80857;
+		font-weight: normal;
+		height: 100vh;
+		text-align: center;
+		@font-face {
+			font-family: 'Poppins';
+			src: url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+		}
+	}
+	.main .content {
+		display: flex;
+		flex-direction: row;
+	}
     .banner_img {
         width: 900px;
     }
@@ -116,10 +108,6 @@
         width: 82%;
         height: auto;
     }
-	.main .content {
-		display: flex;
-		flex-direction: row;
-	}
 	.content .left {
 		left: 0;
 		right: 0;
@@ -146,77 +134,6 @@
 		line-height: normal;
 		color: #111111;
 		margin: 0;
-	}
-	.logo {
-        font-weight: 600;
-        font-size: 2rem;
-		margin-top: 12px;
-		color: #f0390f;
-		margin-left: 100px;
-	}
-
-	.nav-link {
-		padding: 15px 20px;
-		color: #2b2b2b;
-		font-size: 17px;
-		line-height: 20px;
-		font-weight: 400;
-		border-radius: 30px;
-		text-transform: uppercase;
-		text-decoration: none !important;
-	}
-	.nav-link:hover {
-		background-color: #f0390f;
-        color: #fff;
-	}
-	.navigation.navbar {
-		float: right;
-		padding: 0;
-	}
-	.navbar {
-		position: relative;
-		display: -ms-flexbox;
-		display: flex;
-		-ms-flex-wrap: wrap;
-		flex-wrap: wrap;
-		-ms-flex-align: center;
-		align-items: center;
-		-ms-flex-pack: justify;
-		justify-content: space-between;
-		padding: 0.5rem 1rem;
-	}
-	.navbar-nav {
-		display: -ms-flexbox;
-		display: flex;
-		-ms-flex-direction: row;
-		flex-direction: row;
-		padding-left: 0;
-		margin-bottom: 0;
-		list-style: none;
-	}
-	li {
-		display: list-item;
-		text-align: -webkit-match-parent;
-		unicode-bidi: isolate;
-	}
-	.row {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		align-content: center;
-		justify-content: space-between;
-	}
-	.main {
-		font-size: 14px;
-		font-family: 'Poppins', sans-serif;
-		line-height: 1.80857;
-		font-weight: normal;
-		height: 100vh;
-		text-align: center;
-		@font-face {
-			font-family: 'Poppins';
-			src: url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
-		}
 	}
 	.absolute {
 		position: absolute;
@@ -292,4 +209,6 @@
 		--tw-backdrop-saturate: ;
 		--tw-backdrop-sepia: ;
 	}
+
+
 </style>
