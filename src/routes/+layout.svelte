@@ -1,6 +1,5 @@
 <script lang="ts">
 	import Header from '$lib/Header.svelte';
-	import Footer from '$lib/Footer.svelte';
 	import '../styles/app.css';
 </script>
 
@@ -20,6 +19,8 @@
 		display: flex;
 		flex-direction: column;
 		background-color: rgb(241 242 249);
+        justify-items: center;
+        align-items: center;
 	}
 
 	.main::before {
@@ -34,7 +35,6 @@
 		filter: blur(100px);
 	}
 	.main::after {
-        z-index: -1;
 		position: absolute;
 		content: '';
 		height: 300px;
@@ -48,7 +48,7 @@
 	:global(.page) {
 		margin: 0 auto 0 auto;
 		min-width: 1000px;
-		max-width: 1432px;
+		max-width: 1432px
 	}
 	@media (max-width: 1464px) {
 		:global(.page) {

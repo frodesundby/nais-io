@@ -1,9 +1,9 @@
 <script>
-
-	import Brukere from "$lib/Brukere.svelte";
-	import Navlogo from "$lib/icons/Navlogo.svelte";
-
+	import Brukere from '$lib/Brukere.svelte';
+	import Glance from '$lib/Glance.svelte';
+	import Navlogo from '$lib/icons/Navlogo.svelte';
 </script>
+
 <div class="content">
 	<div class="left">
 		<!-- <h3>
@@ -12,11 +12,12 @@
 		<br />for utviklere i det offentlige
 	</h3> -->
 		<h3>
-			En plattform <br />laget av <Navlogo style="width:100; height:2rem; color:#f0390f;" /><br /> for å gi fart og flyt <br />til
-			utviklerne av <br />det offentlige Norge
+			En plattform <br />laget av <Navlogo style="width:100; height:2rem; color:#f0390f;" /><br />
+			for å gi fart og flyt <br />til utviklerne av <br />det offentlige Norge
 		</h3>
 		<h2>
-			Vi mener at det skal være lett å gjøre rett.<br /> Utviklerne bør kunne fokusere det som betyr noe - å lage gode applikasjoner.
+			Vi mener at det skal være lett å gjøre rett.<br /> Utviklerne bør kunne fokusere det som betyr
+			noe - å lage gode applikasjoner.
 		</h2>
 		<!-- <h2 style="line-height: 2rem; max-width: 580px;">
 			Nais er en applikasjonsplattform og verktøykasse for å hjelpe utviklere med å
@@ -32,9 +33,23 @@
 	</div>
 </div>
 <Brukere />
+<div class="glances">
+	<Glance heading="Utrulling" logoUrl="deploy.png">
+		Når du pusher koden til git, hjelper Nais til med å bygge og deploye applikasjonen din. 
+	</Glance>
+	<Glance heading="Automatisert infrastruktur" logoUrl="infra.png">
+		Du spesifiserer hva applikasjonen din har behov for, så sørger Nais for å sette det opp og gi deg det du trenger for å bruke det.
+	</Glance>
+</div>
 
 <style>
+	.glances {
+		display: flex;
+		gap: 2rem;
+	}
 	.content {
+		min-width: 1432px;
+		width: 1432px;
 		display: flex;
 		flex-direction: row;
 	}
@@ -67,9 +82,6 @@
 		right: 0;
 		text-align: left;
 		position: inherit;
-	}
-	.left {
-		margin-left: 10%;
 		min-width: 500px;
 	}
 	.left h3 {

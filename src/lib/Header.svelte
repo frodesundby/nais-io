@@ -1,12 +1,15 @@
 <script>
 	import { page } from '$app/stores';
 	import { get } from 'svelte/store';
+	import Nais from './icons/Nais.svelte';
 
 	const isActive = (/** @type {string} */ path) => get(page).url.pathname === path;
 </script>
 
 <div class="row">
-	<a href="/" class="logo">nais.io</a>
+	<a href="/" class="logo">
+		<Nais /> nais.io
+	</a>
 	<nav class="navigation navbar navbar-expand-md navbar-dark">
 		<ul class="navbar-nav mr-auto">
 			<li class="nav-item">
@@ -43,6 +46,7 @@
 		gap: 8px;
 	}
 	.row {
+		z-index: 10;
 		font-size: 14px;
 		font-family: 'Poppins', sans-serif;
 		line-height: 1.80857;
@@ -58,7 +62,6 @@
 		font-size: 2rem;
 		margin-top: 12px;
 		color: #f0390f;
-		margin-left: 100px;
 	}
 	.logo:hover {
 		text-decoration: underline;
@@ -111,8 +114,7 @@
 	.row {
 		display: flex;
 		flex-direction: row;
-		align-items: center;
-		align-content: center;
 		justify-content: space-between;
+		min-width: 1432px;
 	}
 </style>

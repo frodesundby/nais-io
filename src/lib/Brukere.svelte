@@ -29,7 +29,7 @@
 		padding: 1rem;
 		text-align: center;
 		min-height: 100px;
-		margin-top: auto;
+        margin-top: 100px;
 		margin-bottom: 100px;
 	}
 	.row {
