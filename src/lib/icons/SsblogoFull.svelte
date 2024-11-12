@@ -1,6 +1,8 @@
 <svg
 	data-name="Layer 1"
 	xmlns="http://www.w3.org/2000/svg"
+	height="0.9em"
+	style="display: inline"
 	viewBox="0 0 499.43 91.43"
 	{...$$restProps}
 	><defs

@@ -6,7 +6,7 @@
 
 <Hero />
 
-<!-- <Brukere /> -->
+<Brukere />
 
 <Glances />
 

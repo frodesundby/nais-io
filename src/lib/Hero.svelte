@@ -28,7 +28,6 @@
 		gap: 8vw;
 	}
 	.content {
-		/* text-align: center; */
 		font-size: 1.5rem;
 		display: flex;
 		flex-direction: column;
@@ -41,11 +40,11 @@
 	.cta {
 		color: var(--color-primary);
 		font-weight: bold;
+		align-self: flex-start;
 	}
 
 	@media (min-width: 768px) {
 		.hero {
-			/* padding-block: 8rem; */
 			display: grid;
 			grid-template-columns: 1fr 1fr;
 		}

@@ -3,39 +3,38 @@
 	import SsblogoFull from './icons/SsblogoFull.svelte';
 </script>
 
-<div class="brukere">
-	<div class="row">
-		Nais er brukt av utviklingsteam hos
-		<div class="logos">
-				<Navlogo style="height: 50; width:110; color:#333" />
-				<SsblogoFull style="height: 50; color: #333" />
-		</div>
+<div class="section">
+	<div>Nais er brukt av utviklingsteam hos</div>
+	<div class="users">
+		<Navlogo />
+		<SsblogoFull />
 	</div>
-	<span style="text-decoration: underline">Snakk med oss</span> om Nais kan passe hos dere
+	<div>
+		<a class="mail" href="mailto:nais@nav.no">Snakk med oss</a> om Nais kan passe hos dere
+	</div>
 </div>
 
 <style>
-	.logos {
-		min-height: 70px;
-        min-width: 800px;
-		margin: 20px 0;
-		display: flex;
-		justify-content: center;
-        align-items: center;
-        gap: 4rem;
-	}
-	.brukere {
-		font-size: 1.2rem;
-		padding: 1rem;
+	.section {
+		font-size: 1.5rem;
+		padding-block: 4rem;
+		padding-inline: 4vw;
+		max-width: var(--content-max-width);
 		text-align: center;
-		min-height: 100px;
-        margin-top: 100px;
-		margin-bottom: 100px;
+		display: grid;
+		gap: 1rem;
 	}
-	.row {
+	.users {
+		font-size: 3rem;
 		display: flex;
-		flex-direction: column;
+		flex-wrap: wrap;
+		column-gap: 2rem;
+		row-gap: 1rem;
 		align-items: center;
 		justify-content: center;
+	}
+	.mail {
+		color: var(--color-primary);
+		font-weight: bold;
 	}
 </style>
