@@ -27,15 +27,16 @@ body::after {
 	height: 300px;
 	width: 500px;
 	left: 50%;
+	top: 0;
 	border-radius: 100%;
 	filter: blur(100px);
 	z-index: -1;
 }
 body::before {
 	transform: translate(-75%, -60%);
-	background: linear-gradient(to right, #ffc73a22, #f7689038, #6200ff20);
+	background: linear-gradient(to right, #ff910012, #f7689028, #6200ff15);
 }
 body::after {
 	transform: translate(0, -60%);
-	background: linear-gradient(to right, #001aff22, #6ee5c222);
+	background: linear-gradient(to right, #3380a518, #6ee5c218);
 }

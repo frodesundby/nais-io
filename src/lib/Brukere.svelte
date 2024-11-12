@@ -24,6 +24,21 @@
 		display: grid;
 		gap: 1.5rem;
 		margin: auto;
+		position: relative;
+	}
+	.section::after {
+		position: absolute;
+		content: '';
+		height: 300px;
+		width: 500px;
+		left: 40%;
+		top: 0;
+		border-radius: 100%;
+		filter: blur(100px);
+		z-index: -1;
+	}
+	.section::after {
+		background: linear-gradient(to right, #3380a512, #6ee5c212);
 	}
 	.users {
 		font-size: 3rem;

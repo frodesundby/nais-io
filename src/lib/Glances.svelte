@@ -64,5 +64,20 @@
 		gap: 4rem;
 		justify-content: center;
 		margin: auto;
+		position: relative;
+	}
+	.glances::after {
+		position: absolute;
+		content: '';
+		height: 300px;
+		width: 500px;
+		left: 0;
+		top: 0;
+		border-radius: 100%;
+		filter: blur(100px);
+		z-index: -1;
+	}
+	.glances::after {
+		background: linear-gradient(to right, #ff910012, #f7689012);
 	}
 </style>
