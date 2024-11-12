@@ -119,6 +119,7 @@
 	}
 	.main-menu-item {
 		text-decoration: none;
+		font-size: 1.15rem;
 	}
 	.main-menu-item.isActive {
 		color: var(--color-primary);
@@ -149,10 +150,7 @@
 		.main-menu-list {
 			display: flex;
 			flex-direction: row;
-			gap: 2rem;
-		}
-		.main-menu-item {
-			text-transform: uppercase;
+			gap: 1.7rem;
 		}
 		.mobile-github-link {
 			display: none;

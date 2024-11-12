@@ -1,45 +1,43 @@
 <script lang="ts">
 	export let heading: string;
-	export let logoUrl: string;
 </script>
 
 <div class="glance">
 	<div class="icon">
-		<img src={logoUrl} alt="glance logo" />
+		<slot name="icon" />
 	</div>
-	<div class="content">
+	<div>
 		<h2>{heading}</h2>
-		<p><slot /></p>
+		<slot name="text" />
 	</div>
 </div>
 
 <style>
 	.glance {
-		min-width: 450px;
-		max-width: 450px;
-		display: flex;
-		gap: 40px;
+		display: grid;
+		grid-template-columns: 60px 1fr;
+		align-items: start;
+		gap: 1.25rem;
 	}
-	.glance .icon {
+	.icon {
 		border: 1px solid #000;
 		border-radius: 10px;
 		padding: 5px;
-		min-width: 50px;
-		height: 50px;
-		img {
-			width: 90%;
-			height: 90%;
-		}
+		font-size: 3rem;
+		color: var(--color);
+		border-color: var(--color);
+		box-shadow:
+			color-mix(in srgb, var(--color) 35%, transparent) 0px 0px 0px 1px,
+			color-mix(in srgb, var(--color) 30%, transparent) 0px 20px 25px -5px,
+			color-mix(in srgb, var(--color) 30%, transparent) 0px 8px 10px -6px;
+		background: linear-gradient(
+			to bottom right,
+			color-mix(in srgb, var(--color) 25%, white),
+			color-mix(in srgb, var(--color) 50%, white)
+		);
 	}
-	.glance .content {
-		min-width: 330px;
-		h2 {
-			margin: 0;
-			text-align: start;
-			vertical-align: top;
-			font-size: 1.5rem;
-			font-weight: bold;
-		}
-		text-align: left;
+	h2 {
+		line-height: 1.3;
+		margin-bottom: 0.4rem;
 	}
 </style>

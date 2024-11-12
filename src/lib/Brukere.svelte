@@ -4,7 +4,7 @@
 </script>
 
 <div class="section">
-	<div>Nais er brukt av utviklingsteam hos</div>
+	<div>Nais brukes av utviklingsteam hos</div>
 	<div class="users">
 		<Navlogo />
 		<SsblogoFull />
@@ -22,7 +22,8 @@
 		max-width: var(--content-max-width);
 		text-align: center;
 		display: grid;
-		gap: 1rem;
+		gap: 1.5rem;
+		margin: auto;
 	}
 	.users {
 		font-size: 3rem;
