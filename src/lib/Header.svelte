@@ -36,9 +36,9 @@
 			<li><a class="main-menu-item" href="https://nais.io/blog/">Artikler</a></li>
 			<li><a class="main-menu-item" href="https://docs.nais.io">Dokumentasjon</a></li>
 			<li><a class="main-menu-item" href="/logg" class:isActive={isActive('logg')}>Logg</a></li>
-			<li>
+			<!-- <li>
 				<a class="main-menu-item" href="/status" class:isActive={isActive('status')}>Status</a>
-			</li>
+			</li> -->
 			<li><a class="main-menu-item" href="mailto:nais@nav.no">Kontakt oss</a></li>
 		</ul>
 		<a class="mobile-github-link" href="https://github.com/nais" aria-label="nais github"
@@ -71,11 +71,11 @@
 			'home button'
 			'menu menu';
 		align-items: center;
-		padding-inline: 8px;
+		padding-inline: 4vw;
 	}
 	.home {
 		text-decoration: none;
-		color: #f0390f;
+		color: var(--color-primary);
 		display: grid;
 		grid-template-columns: auto 1fr;
 		gap: 4px;
@@ -83,6 +83,7 @@
 	}
 	.name {
 		font-size: 2.3rem;
+		color: var(--color-black);
 	}
 	.main-menu-toggle {
 		grid-area: button;
@@ -120,7 +121,7 @@
 		text-decoration: none;
 	}
 	.main-menu-item.isActive {
-		color: #f0390f;
+		color: var(--color-primary);
 	}
 	.mobile-github-link {
 		font-size: 1.5rem;
@@ -135,9 +136,9 @@
 			grid-template-areas: 'home menu github';
 			grid-template-columns: auto 1fr auto;
 			justify-items: center;
-			max-width: 1024px;
+			max-width: var(--content-max-width);
 			margin: auto;
-			padding: 16px 20px;
+			padding-block: 16px;
 		}
 		.main-menu-toggle {
 			display: none;

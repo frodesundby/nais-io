@@ -1,5 +1,11 @@
 @import './reset.css';
 
+:root {
+	--color-primary: #f7682b;
+	--color-black: #222;
+	--content-max-width: 1424px;
+}
+
 body {
 	font-family: 'Poppins', sans-serif;
 	background-color: rgb(241 242 249);
@@ -8,10 +14,11 @@ a {
 	color: inherit;
 }
 a:hover {
-	color: #f0390f;
+	color: var(--color-primary);
 }
 body {
 	overflow-x: hidden;
+	color: #222;
 }
 body::before,
 body::after {

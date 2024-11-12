@@ -9,8 +9,8 @@
 			for å gi fart og flyt til utviklerne av det offentlige Norge
 		</h2>
 		<p>
-			Vi mener at det skal være lett å gjøre rett. Utviklerne bør kunne fokusere det som betyr noe -
-			å lage gode applikasjoner.
+			Vi mener at det skal være lett å gjøre rett. Utviklere bør kunne fokusere på det som betyr noe
+			- å lage gode applikasjoner.
 		</p>
 		<a class="cta" href="https://docs.nais.io">Lær mer om Nais</a>
 	</div>
@@ -19,18 +19,40 @@
 
 <style>
 	.hero {
-		padding: 3rem 0.5rem;
+		padding: 8vw 4vw;
+		max-width: var(--content-max-width);
+		margin: auto;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		gap: 2rem;
+		gap: 8vw;
 	}
 	.content {
+		/* text-align: center; */
+		font-size: 1.5rem;
 		display: flex;
 		flex-direction: column;
 		gap: 1rem;
+		max-width: 55ch;
 	}
 	.cloud {
 		width: 50%;
+	}
+	.cta {
+		color: var(--color-primary);
+		font-weight: bold;
+	}
+
+	@media (min-width: 768px) {
+		.hero {
+			/* padding-block: 8rem; */
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+		}
+		.cloud {
+			width: 100%;
+			max-width: 400px;
+			justify-self: center;
+		}
 	}
 </style>
