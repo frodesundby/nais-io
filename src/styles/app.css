@@ -10,6 +10,9 @@ a {
 a:hover {
 	color: #f0390f;
 }
+body {
+	overflow-x: hidden;
+}
 body::before,
 body::after {
 	position: absolute;
