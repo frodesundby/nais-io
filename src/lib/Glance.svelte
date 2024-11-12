@@ -18,9 +18,8 @@
 
 <style>
 	.glance {
-		min-height: 100px;
-		min-width: 200px;
-		max-width: 500px;
+		min-width: 450px;
+		max-width: 450px;
 		display: flex;
 		gap: 40px;
 	}
@@ -36,6 +35,7 @@
 		}
 	}
 	.glance .content {
+		min-width: 330px;
 		h2 {
 			margin: 0;
 			text-align: start;
@@ -57,7 +57,7 @@
 		flex-direction: column;
 		justify-items: center;
 		align-items: center;
-		min-height: 300px;
+		margin-bottom: 50px;
 	}
 
 	.main::before {
