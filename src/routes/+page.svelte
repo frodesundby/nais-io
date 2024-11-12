@@ -36,7 +36,7 @@
 <div class="glances">
 	<Glance heading="Utrulling og attestering" logoUrl="deploy.png">
 		Nais har Github Actions som bygger, tester, inspiserer, signerer og deployer applikasjonen.
-		Når du pusher koden, bygges et image og aplikasjonens bibliotek og avhengigheter kartlegges for å lage en attestert innholdsfortegnelse (<a href="FIXME">SBOM</a>).
+		Når du pusher koden, bygges et image og aplikasjonens bibliotek og avhengigheter kartlegges for å lage en attestert innholdsfortegnelse (<a href="/">SBOM</a>).
 		Med image og SBOM på plass kan applikasjonen deployes til et miljø.
 	</Glance>
 	<Glance heading="Automatisert infrastruktur" logoUrl="infra.png">
