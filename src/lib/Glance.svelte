@@ -5,9 +5,9 @@
 </script>
 
 <div class="main">
-	<div class="argument">
+	<div class="glance">
 		<div class="icon">
-			<img src={logoUrl} alt="argument logo" />
+			<img src={logoUrl} alt="glance logo" />
 		</div>
 		<div class="content">
 			<h2>{heading}</h2>
@@ -17,14 +17,14 @@
 </div>
 
 <style>
-	.argument {
+	.glance {
 		min-height: 100px;
 		min-width: 200px;
 		max-width: 500px;
 		display: flex;
 		gap: 40px;
 	}
-	.argument .icon {
+	.glance .icon {
 		border: 1px solid #000;
 		border-radius: 10px;
 		padding: 5px;
@@ -35,7 +35,7 @@
 			height: 90%;
 		}
 	}
-	.argument .content {
+	.glance .content {
 		h2 {
 			margin: 0;
 			text-align: start;

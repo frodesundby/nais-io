@@ -34,11 +34,17 @@
 </div>
 <Brukere />
 <div class="glances">
-	<Glance heading="Utrulling" logoUrl="deploy.png">
-		Når du pusher koden til git, hjelper Nais til med å bygge og deploye applikasjonen din. 
+	<Glance heading="Utrulling og attestering" logoUrl="deploy.png">
+		Nais har Github Actions som bygger, tester, inspiserer, signerer og deployer applikasjonen.
+		Når du pusher koden, bygges et image og aplikasjonens bibliotek og avhengigheter kartlegges for å lage en attestert innholdsfortegnelse (<a href="FIXME">SBOM</a>).
+		Med image og SBOM på plass kan applikasjonen deployes til et miljø.
 	</Glance>
 	<Glance heading="Automatisert infrastruktur" logoUrl="infra.png">
-		Du spesifiserer hva applikasjonen din har behov for, så sørger Nais for å sette det opp og gi deg det du trenger for å bruke det.
+		Du spesifiserer hva applikasjonen din har behov for, så sørger Nais for å sette det opp og gi deg det du trenger for å bruke det; 
+		trenger du en database, så settes det opp av Nais og applikasjonen din får brukernavn, passord og tilgang på nettverksnivå ut av boksen.
+	</Glance>
+	<Glance heading="Innsikt og oversikt" logoUrl="monitoring.png">
+		.
 	</Glance>
 </div>
 
