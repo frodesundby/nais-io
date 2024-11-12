@@ -37,7 +37,7 @@
 	<Glance heading="Utrulling" logoUrl="deploy.png">
 		<!-- Nais tar koden din fra <i>push</i> til <i>prod</i> uten nedetid. -->
 		<!-- Nais tar koden din fra <i>push</i> til <i>prod</i>. Uten nedetid. -->
-		Nais lar deg ta koden din fra <i>push</i> til <i>prod</i><br/> uten nedetid.
+		Nais lar deg ta koden din fra <i>push</i> til <i>prod</i><br /> uten nedetid.
 		<!-- Nais tar seg av å ta koden din fra <i>push</i> til <i>prod</i> uten nedetid -->
 		<!-- Det er også bygget inn støtte for sikkerhetssystemer som identifiserer og varsler om kjente sårbarheter -->
 		<!-- Nais bygger, kartlegger avhengigheter, signerer og ruller ut applikasjonen.
@@ -63,15 +63,15 @@
 		<!-- Se hvordan applikasjonen din oppfører seg i produksjon, og få varsler om noe er galt. -->
 	</Glance>
 	<Glance heading="Sikkerhet" logoUrl="insurance.png">
-		Alt er stengt i utgangspunktet, så du må pirke dine egne hull.
-		Isolasjon er standard og du definerer publikum.
+		Alt er stengt i utgangspunktet, så du må pirke dine egne hull. Isolasjon er standard og du
+		definerer publikum.
 		<!-- Du <a href="https://doc.nais.io/workloads/explanations/zero-trust/">definerer publikum</a> for din applikasjon og varsles om du har sårbarheter. -->
 	</Glance>
 	<!-- <Glance heading="24/7 vakt" logoUrl="pulse.png">
 		Du må passe på applikasjonen din, men vi passer på alt annet. 24/7.
 	</Glance> -->
 	<Glance heading="Et Nais fellesskap" logoUrl="pulse.png">
-		Vi er mange som bruker og utvikler Nais, og vi hjelper hverandre. 
+		Vi er mange som bruker og utvikler Nais, og vi hjelper hverandre.
 	</Glance>
 </div>
 

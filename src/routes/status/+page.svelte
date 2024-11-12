@@ -2,9 +2,7 @@
 	import Header from '$lib/Header.svelte';
 </script>
 
-<div class="main">
-	<img src="status.png" alt="status" class="status-image" />
-</div>
+<img src="status.png" alt="status" class="status-image" />
 
 <style>
 	.status-image {
