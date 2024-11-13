@@ -35,7 +35,7 @@
 		<ul class="main-menu-list">
 			<li><a class="main-menu-item" href="https://nais.io/blog/">Artikler</a></li>
 			<li><a class="main-menu-item" href="https://docs.nais.io">Dokumentasjon</a></li>
-			<li><a class="main-menu-item" href="/logg" class:isActive={isActive('logg')}>Logg</a></li>
+			<!-- <li><a class="main-menu-item" href="/annonseringer" class:isActive={isActive('annonseringer')}>Annonseringer</a></li> -->
 			<!-- <li>
 				<a class="main-menu-item" href="/status" class:isActive={isActive('status')}>Status</a>
 			</li> -->
@@ -121,14 +121,14 @@
 		text-decoration: none;
 		font-size: 1.15rem;
 	}
-	.main-menu-item.isActive {
+	/* .main-menu-item.isActive {
 		color: var(--color-primary);
-	}
-	.mobile-github-link {
+	}  */
+	/* mobile-github-link {
 		font-size: 1.5rem;
 		margin-top: 4px;
 		display: inline-block;
-	}
+	} */
 	.desktop-github-link {
 		display: none;
 	}

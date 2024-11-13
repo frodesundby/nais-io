@@ -9,6 +9,3 @@
 <Brukere />
 
 <Glances />
-
-<style>
-</style>
