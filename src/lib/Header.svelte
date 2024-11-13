@@ -72,7 +72,30 @@
 			'menu menu';
 		align-items: center;
 		padding-inline: 4vw;
+		position: relative;
+		overflow-x: clip;
 	}
+	.header::before,
+	.header::after {
+		position: absolute;
+		content: '';
+		height: 300px;
+		width: 500px;
+		left: 50%;
+		top: 0;
+		border-radius: 100%;
+		filter: blur(100px);
+		z-index: -1;
+	}
+	.header::before {
+		transform: translate(-75%, -60%);
+		background: linear-gradient(to right, #ff910012, #f7689028, #6200ff15);
+	}
+	.header::after {
+		transform: translate(0, -60%);
+		background: linear-gradient(to right, #3380a518, #6ee5c218);
+	}
+
 	.home {
 		text-decoration: none;
 		color: var(--color-primary);

@@ -53,6 +53,7 @@
 		justify-content: center;
 		margin: auto;
 		position: relative;
+		overflow-x: clip;
 	}
 	.glances::after {
 		position: absolute;

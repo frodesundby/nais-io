@@ -25,6 +25,7 @@
 		gap: 1.5rem;
 		margin: auto;
 		position: relative;
+		overflow-x: clip;
 	}
 	.section::after {
 		position: absolute;
