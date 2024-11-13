@@ -2,20 +2,10 @@
 	import Glance from '$lib/Glance.svelte';
 	import {
 		BulletListIcon,
-		CogRotationFillIcon,
 		CogRotationIcon,
-		EarthIcon,
-		GlassesIcon,
-		GlassIcon,
-		HandShakeHeartFillIcon,
 		HandShakeHeartIcon,
-		LineGraphStackedIcon,
-		MonitorIcon,
-		NumberListIcon,
-		RocketFillIcon,
 		RocketIcon,
 		SealCheckmarkIcon,
-		ThermometerIcon,
 		VitalsIcon
 	} from '@nais/ds-svelte-community/icons';
 </script>
@@ -23,9 +13,7 @@
 <div class="glances">
 	<Glance heading="Utrulling" --color="#FF9100">
 		<RocketIcon slot="icon" />
-		<p slot="text">
-			Nais lar deg ta koden din fra <i>push</i> til <i>prod</i> uten nedetid.
-		</p>
+		<p slot="text">Nais tar ideene dine raskt fra kode til produksjon, uten nedetid.</p>
 	</Glance>
 	<Glance heading="Automatisering" --color="#634689">
 		<CogRotationIcon slot="icon" />
@@ -44,8 +32,8 @@
 	<Glance heading="Sikkerhet" --color="#06893A">
 		<SealCheckmarkIcon slot="icon" />
 		<p slot="text">
-			Alt er stengt i utgangspunktet, så du må pirke dine egne hull. Isolasjon er standard og du
-			definerer publikum.
+			Nais kommer med solide standardinnstillinger ut av boksen, og gir deg det du trenger for å
+			sikre systemene dine.
 		</p>
 	</Glance>
 	<Glance heading="Et Nais fellesskap" --color="#DE2E2E">
